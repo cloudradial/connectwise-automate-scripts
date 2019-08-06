@@ -1,0 +1,47 @@
+﻿<LabTech_Expansion
+	Version="190.203"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>11127</ScriptId>
+				<FolderId>263</FolderId>
+				<ScriptName>Uninstall CloudRadial Agent</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>24,26,27,</Permission>
+				<EditPermission>24,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPTQuCQBiE70H/YX+Ay37o+sXLXjK6JERFd11fYQ+tsirkvy+lwE7DzPAMDJytQTdgUY2VhvvcoxbAVoXr5A7d5Eb0mgPbODi+eusXBnXZuaaaA1KgwWeNnvAwIJKLlMS5jPJIkUsJbAPAzXjbjw/0g+3csvwffPvTZBuNMmtlplraJjKlQmBK69gklHPFVVyZTxr++BUAtv2z370Bw/KMJN8AAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2UT2uDMBjG74N9h9DTdrAmsVo7JFDcLIXBygo7eUk1loCNRePw4y9NY5c6JoMdBjv5Ps/7h/f9EYy2Wc2P8pFKSm5vAIjOutFCyadO1vSUTTgr8wa4fWJDa3pgktWWtyqrHS0t4zzsTRXxShAUudfGVdWq5TlheFHghV84xRyHDkIsdHZBNncg9KEf0Ey5Xj9FN+idXXtpM24r2fFyxTKTZgETGT9phdbrnAQ4ci1pX4lIXFZt/kpzTkuw3DMhwfv5BICmMHJNld2DB6S8gZ4NtG9Bq2pJ1FT9NV5cCclFy07+JTa5l+aZH7hu6UOTWYtc7Ur1xSprS5vbJ6oRdniEHcL+CLxJ/JBu6mqvBEh4yRpw14XBffoFatoKLhoI4ZR1bPIzrKTH7/1fvP7se7qDO3/77NAfcOm1+Qd9AMhYsxmSBAAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>e29f295f-f728-11e8-b6c7-005056ac7283</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>263</FolderID>
+					<ParentID>1</ParentID>
+					<Name>OfficeHub</Name>
+					<GUID>095f9c04-fdb8-4ad8-862a-fbecac5a2717</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>1</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Software</Name>
+					<GUID>31866f37-8f0a-47b9-b1fd-11bd855f8391</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

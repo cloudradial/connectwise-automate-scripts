@@ -1,0 +1,23 @@
+﻿<LabTech_Expansion
+	Version="190.203"
+	Name="LabTech Search Expansion"
+	Type="Search">
+	<Search>
+		<NewDataSet>
+			<Table>
+				<SensID>8194</SensID>
+				<Name>Software - Cloud Radial Installed</Name>
+				<SQL>Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as `Computer Name`, Computers.Domain, Computers.UserName as `Username`, Services.`Name` as `Services_Name`
+From Computers, Clients, Services 
+Where Computers.ClientID = Clients.ClientID
+ and Services.ComputerID = Computers.ComputerID
+ and ((Services.`Name` = 'CloudRadial'))</SQL>
+				<QueryType>4</QueryType>
+				<ListDATA>Related - Services|Name (Services)|=|CloudRadial|=||=|^Select|||||||^</ListDATA>
+				<FolderID>9</FolderID>
+				<GUID>38e4fb6f-8a41-4acc-b057-25e2a37b2fad</GUID>
+				<SearchXML></SearchXML>
+			</Table>
+		</NewDataSet>
+	</Search>
+</LabTech_Expansion>

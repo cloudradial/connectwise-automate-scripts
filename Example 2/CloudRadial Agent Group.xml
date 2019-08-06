@@ -1,0 +1,91 @@
+﻿<LabTech_Expansion
+	Version="190.203"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>8106</GroupID>
+				<ParentID>0</ParentID>
+				<Parents>,</Parents>
+				<Children>,</Children>
+				<depth>0</depth>
+				<Name>CloudRadial Agent Computers</Name>
+				<FullName>CloudRadial Agent Computers</FullName>
+				<Permissions>0</Permissions>
+				<Template>0</Template>
+				<AutoJoinScript>8205</AutoJoinScript>
+				<Master>2</Master>
+				<LimitToParent>1</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes></Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>2019-06-21T09:03:18-07:00</MaintWindowApplied>
+				<GroupType>5</GroupType>
+				<Priority>5</Priority>
+				<GUID>cac9f2d3-943d-11e9-8280-005056ac7283</GUID>
+				<NetworkJoin>0</NetworkJoin>
+				<NetworkJoinOptions>0</NetworkJoinOptions>
+				<ContactJoin>0</ContactJoin>
+				<ContactJoinOptions>0</ContactJoinOptions>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>8205</SensID>
+					<Name>CloudRadial Agents is Installed</Name>
+					<SQL>SELECT 
+   computers.computerid as `Computer Id`,
+   computers.name as `Computer Name`,
+   clients.name as `Client Name`,
+   computers.domain as `Computer Domain`,
+   computers.username as `Computer User`,
+   Services.Name as `Computer.Services.Name`
+FROM Computers 
+LEFT JOIN inv_operatingsystem ON (Computers.ComputerId=inv_operatingsystem.ComputerId)
+LEFT JOIN Clients ON (Computers.ClientId=Clients.ClientId)
+LEFT JOIN Locations ON (Computers.LocationId=Locations.LocationID)
+LEFT JOIN Services ON (services.ComputerId = Computers.ComputerId)
+ WHERE 
+((Services.Name = 'cloudradial'))
+</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA>Select||=||=||=|^Select|||||||^</ListDATA>
+					<FolderID>0</FolderID>
+					<GUID>e94e8ac2-3389-4cd7-aea7-826ec5807b40</GUID>
+					<SearchXML>&lt;LabTechAbstractSearch&gt;&lt;asn&gt;&lt;st&gt;AndNode&lt;/st&gt;&lt;cn&gt;&lt;asn&gt;&lt;st&gt;ComparisonNode&lt;/st&gt;&lt;lon&gt;Computer.Services.Name&lt;/lon&gt;&lt;lok&gt;Computer.Services.Name&lt;/lok&gt;&lt;lmo&gt;Equals&lt;/lmo&gt;&lt;dv&gt;cloudradial&lt;/dv&gt;&lt;dk&gt;cloudradial&lt;/dk&gt;&lt;/asn&gt;&lt;/cn&gt;&lt;/asn&gt;&lt;/LabTechAbstractSearch&gt;</SearchXML>
+				</Table>
+			</NewDataSet>
+		</Search>
+		<GroupMonitor>
+			<NewDataSet>
+				<Table>
+					<AgentID>1692</AgentID>
+					<GroupID>8106</GroupID>
+					<SearchID>0</SearchID>
+					<Name>CloudRadial Service</Name>
+					<CheckAction>6</CheckAction>
+					<AlertAction>15</AlertAction>
+					<AlertMessage>CloudRadial Service~~~%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.!!!CloudRadial Service~~~%NAME% %STATUS% on %CLIENTNAME%\%COMPUTERNAME% at %LOCATIONNAME% for %FIELDNAME% result %RESULT%.</AlertMessage>
+					<ContactID>0</ContactID>
+					<interval>3600</interval>
+					<Where>127.0.0.1</Where>
+					<What>2</What>
+					<DataOut>CloudRadial</DataOut>
+					<Comparor>1</Comparor>
+					<DataIn>1</DataIn>
+					<IDField></IDField>
+					<AlertStyle>1</AlertStyle>
+					<ScriptID>0</ScriptID>
+					<datacollector></datacollector>
+					<Category>5</Category>
+					<TicketCategory>134</TicketCategory>
+					<ScriptTarget>1</ScriptTarget>
+					<GUID>e1999fb7-9732-415a-8522-8043b39e8a15</GUID>
+				</Table>
+			</NewDataSet>
+		</GroupMonitor>
+	</Group>
+</LabTech_Expansion>

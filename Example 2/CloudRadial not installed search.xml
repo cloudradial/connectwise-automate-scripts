@@ -1,0 +1,24 @@
+﻿<LabTech_Expansion
+	Version="190.203"
+	Name="LabTech Search Expansion"
+	Type="Search">
+	<Search>
+		<NewDataSet>
+			<Table>
+				<SensID>8204</SensID>
+				<Name>Software - Cloud Radial Not Installed</Name>
+				<SQL>Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as `Computer Name`, Computers.Domain, Computers.UserName as `Username`, Computers.OS, v_extradataclients.`Cloud Radial Enable` as `v_extradataclients_Cloud Radial Enable`, inv_operatingsystem.`64Bit` as `inv_operatingsystem_64Bit`
+From Computers, Clients, v_extradataclients , inv_operatingsystem 
+Where Computers.ClientID = Clients.ClientID
+ and v_extradataclients.ClientID = Computers.ClientID
+ and inv_operatingsystem.ComputerID = Computers.ComputerID
+ and (( computers.`ComputerID` NOT IN (SELECT ComputerID FROM Services WHERE ComputerID = Computers.`ComputerID` AND Services.`Name` LIKE 'CloudRadial') ) AND (Computers.OS not in ('0.0 (Linux)', 'Mac OS X 10.14.1 (Darwin)', 'Mac OS X 10.14.2 (Darwin)', 'Mac OS X 10.14.3 (Darwin)', 'Mac OS X 10.14.4 (Darwin)', 'Mac OS X 10.14.5 (Darwin)', 'Mac OS X 10.10.5 (Darwin)', 'Mac OS X 10.12.1 (Darwin)', 'Mac OS X 10.12.5 (Darwin)', 'Mac OS X 10.12.6 (Darwin)', 'Mac OS X 10.13.1 (Darwin)', 'Mac OS X 10.13.2 (Darwin)', 'Mac OS X 10.13.3 (Darwin)', 'Mac OS X 10.13.4 (Darwin)', 'Mac OS X 10.13.5 (Darwin)', 'Mac OS X 10.13.6 (Darwin)', 'Mac OS X Server 10.11.6 (Darwin)', 'Mac OS X Server 10.13.6 (Darwin)', 'OS X (Darwin)', 'Mac OS X 10.14.0 (Darwin)', 'Mac OS X 10.14.1 (Darwin)')) AND (v_extradataclients.`Cloud Radial Enable` = 1) AND (inv_operatingsystem.`64Bit` like 1))</SQL>
+				<QueryType>4</QueryType>
+				<ListDATA>Related - Services|Name (Services)|Exclude|CloudRadial|=||=|^OS||notLike| 0.0 (Linux),Mac OS X 10.10.5 (Darwin),Mac OS X 10.12.1 (Darwin),Mac OS X 10.14.5 (Darwin),Mac OS X 10.14.4 (Darwin),Mac OS X 10.14.3 (Darwin),Mac OS X 10.14.2 (Darwin),Mac OS X 10.14.1 (Darwin),Mac OS X 10.12.5 (Darwin),Mac OS X 10.12.6 (Darwin),Mac OS X 10.13.1 (Darwin),Mac OS X 10.13.2 (Darwin),Mac OS X 10.13.3 (Darwin),Mac OS X 10.13.4 (Darwin),Mac OS X 10.13.5 (Darwin),Mac OS X 10.13.6 (Darwin),Mac OS X Server 10.11.6 (Darwin),Mac OS X Server 10.13.6 (Darwin),OS X (Darwin), Mac OS X 10.14.0 (Darwin), Mac OS X 10.14.1 (Darwin)||||^Related - Additional Client Fields|Cloud Radial Enable (v_extradataclients)|=|1|=||=|^Related - Operating System|64Bit (inv_operatingsystem)|Like|1||||^</ListDATA>
+				<FolderID>9</FolderID>
+				<GUID>46b02497-132b-4a58-a769-d09a052ff4d1</GUID>
+				<SearchXML></SearchXML>
+			</Table>
+		</NewDataSet>
+	</Search>
+</LabTech_Expansion>

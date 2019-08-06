@@ -1,0 +1,53 @@
+﻿<LabTech_Expansion
+	Version="190.203"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>11106</ScriptId>
+				<FolderId>263</FolderId>
+				<ScriptName>Create CloudRadial Shortcut on Desktop</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>24,25,26,27,</Permission>
+				<EditPermission>24,27,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPQQrCMBRE94J3yAEa8lONLeWTjYobRVHRdZp8IZu0pCnY20uLQl0NM8MbGDx6S6GjnUlG431oSUsUk+K1D9umD4miBhQzh/t36+PIkH6SC9Q5M2TsbFNTU2QSMpaDLFlRyaICxS4nFDMEbzb6Nj0odr4J4/Z/8O0PvXe6JGfWDjbcWiu5lFTyOlcvDqBAbYwt8nL14ycAxfzRcvEB2TP6huEAAAA=</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2Z3W7aMBTH7yftHfICKTghIUUoUgWlq1SpqLS7yo2JzWQtxFHiCLanXz5L+LALBK+4V/jYsWX/ODnn/J3hzI9JxMaQQff7N00blnZSGJl5v2YxzEcnBAco0Tr1wBTGcIkZjht9DwGdw6DRUS72M3uI0NAFw852x9ZTDylBroMR7KGurfu+D3QAsKPPDWuhd7tW17Kh3zccs16lmFDsudPcdLXcjOHo/RR3Pqs2ULWq/kkaFvYjyscaVvOQYOfQxo5t7ti9Hdtq8KAxc7vZfvPfqm9EQ0bCFOf97+1q7Dl5IktSTKmb1chjiHDIYHGYbLRpNpFsKAiwGCIslsUH444G3piuwoBClAw7Vef/YAX4rICjACxvFNAUxRARGEgBB9QCB3picG9JFjK8aToPiO9Nic/SGCfe82JBfPwjnd8Qnx7GmG+7am3hdAdjHGTha0ICXLuueRJhQy3C5q2A8KB2zCaOyzqkeXrU+0RchohWDYuEv7QQr7SFNGi9S6cKIJOZI2D2SmmQeGn4l0Q3eI05LysvRO5NNFphtdTyRRHXGV2wFYxxSeulpLWJixm1U1EfmtwOt60UbmCfkcM3DqrpVDuOraYj7pNSoklfrf9BnLFGNPrz9vIkL2E5StESJqycVZ6s5CWqW5USFbD757zix1SbJ5Wq7aIqOENHfuCgVw09jTlRcQ/6GCe/GY0Ozm3JnCerrpS5MCoM7kNUritHgfIE0nXec3ygj/bE4oVhfSV5lLPK0w1ek4TJzTtAKYUEbFPSNUdbjDxFdP5lxvVwFKWDC2PkKR1FMe6k5D11Kc0deUrla3A8vrRpy5GnYa6Uo7hckX9HCdSSMeKSRW51Zyj1FUvoWOWSmk+XUV7kITm8zlAOrXnVdvV19x/kGJ2M7B0AAA==</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>8eda4d06-ccc1-11e8-b25f-005056ac7283</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<File
+			Name="L:\Transfer\Tools\unzip.exe"
+			Bytes="{{BYTE STRING GOES HERE}}" />
+		<File
+			Name="L:\Transfer\Software\CloudRadial\CloudRadial.zip"
+			Bytes="{{BYTE STRING GOES HERE}}" />
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>263</FolderID>
+					<ParentID>1</ParentID>
+					<Name>CloudRadial</Name>
+					<GUID>095f9c04-fdb8-4ad8-862a-fbecac5a2717</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>1</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Software</Name>
+					<GUID>31866f37-8f0a-47b9-b1fd-11bd855f8391</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>

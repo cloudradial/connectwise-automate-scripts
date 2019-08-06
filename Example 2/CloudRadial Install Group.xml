@@ -1,0 +1,90 @@
+﻿<LabTech_Expansion
+	Version="190.203"
+	Name="LabTech Group Expansion"
+	Type="Group">
+	<Group>
+		<NewDataSet>
+			<Table>
+				<GroupID>8093</GroupID>
+				<ParentID>8092</ParentID>
+				<Parents>,8092,</Parents>
+				<Children>,</Children>
+				<depth>1</depth>
+				<Name>CloudRadial Installation</Name>
+				<FullName>Software Installation.CloudRadial Installation</FullName>
+				<Permissions>0</Permissions>
+				<Template>0</Template>
+				<AutoJoinScript>8204</AutoJoinScript>
+				<Master>2</Master>
+				<LimitToParent>1</LimitToParent>
+				<Control>0</Control>
+				<ControlID>0</ControlID>
+				<Notes></Notes>
+				<MaintenanceID>0</MaintenanceID>
+				<MaintWindowApplied>2019-06-21T09:55:03-07:00</MaintWindowApplied>
+				<GroupType>0</GroupType>
+				<Priority>5</Priority>
+				<GUID>47336eb5-ce7b-11e8-b25f-005056ac7283</GUID>
+				<NetworkJoin>0</NetworkJoin>
+				<NetworkJoinOptions>0</NetworkJoinOptions>
+				<ContactJoin>0</ContactJoin>
+				<ContactJoinOptions>0</ContactJoinOptions>
+			</Table>
+		</NewDataSet>
+		<Search>
+			<NewDataSet>
+				<Table>
+					<SensID>8204</SensID>
+					<Name>Software - Cloud Radial Not Installed</Name>
+					<SQL>Select DISTINCT Computers.ComputerID, Clients.Name as `Client Name`, Computers.Name as `Computer Name`, Computers.Domain, Computers.UserName as `Username`, Computers.OS, v_extradataclients.`Cloud Radial Enable` as `v_extradataclients_Cloud Radial Enable`, inv_operatingsystem.`64Bit` as `inv_operatingsystem_64Bit`
+From Computers, Clients, v_extradataclients , inv_operatingsystem 
+Where Computers.ClientID = Clients.ClientID
+ and v_extradataclients.ClientID = Computers.ClientID
+ and inv_operatingsystem.ComputerID = Computers.ComputerID
+ and (( computers.`ComputerID` NOT IN (SELECT ComputerID FROM Services WHERE ComputerID = Computers.`ComputerID` AND Services.`Name` LIKE 'CloudRadial') ) AND (Computers.OS not in ('0.0 (Linux)', 'Mac OS X 10.14.1 (Darwin)', 'Mac OS X 10.14.2 (Darwin)', 'Mac OS X 10.14.3 (Darwin)', 'Mac OS X 10.14.4 (Darwin)', 'Mac OS X 10.14.5 (Darwin)', 'Mac OS X 10.10.5 (Darwin)', 'Mac OS X 10.12.1 (Darwin)', 'Mac OS X 10.12.5 (Darwin)', 'Mac OS X 10.12.6 (Darwin)', 'Mac OS X 10.13.1 (Darwin)', 'Mac OS X 10.13.2 (Darwin)', 'Mac OS X 10.13.3 (Darwin)', 'Mac OS X 10.13.4 (Darwin)', 'Mac OS X 10.13.5 (Darwin)', 'Mac OS X 10.13.6 (Darwin)', 'Mac OS X Server 10.11.6 (Darwin)', 'Mac OS X Server 10.13.6 (Darwin)', 'OS X (Darwin)', 'Mac OS X 10.14.0 (Darwin)', 'Mac OS X 10.14.1 (Darwin)')) AND (v_extradataclients.`Cloud Radial Enable` = 1) AND (inv_operatingsystem.`64Bit` like 1))</SQL>
+					<QueryType>4</QueryType>
+					<ListDATA>Related - Services|Name (Services)|Exclude|CloudRadial|=||=|^OS||notLike| 0.0 (Linux),Mac OS X 10.10.5 (Darwin),Mac OS X 10.12.1 (Darwin),Mac OS X 10.14.5 (Darwin),Mac OS X 10.14.4 (Darwin),Mac OS X 10.14.3 (Darwin),Mac OS X 10.14.2 (Darwin),Mac OS X 10.14.1 (Darwin),Mac OS X 10.12.5 (Darwin),Mac OS X 10.12.6 (Darwin),Mac OS X 10.13.1 (Darwin),Mac OS X 10.13.2 (Darwin),Mac OS X 10.13.3 (Darwin),Mac OS X 10.13.4 (Darwin),Mac OS X 10.13.5 (Darwin),Mac OS X 10.13.6 (Darwin),Mac OS X Server 10.11.6 (Darwin),Mac OS X Server 10.13.6 (Darwin),OS X (Darwin), Mac OS X 10.14.0 (Darwin), Mac OS X 10.14.1 (Darwin)||||^Related - Additional Client Fields|Cloud Radial Enable (v_extradataclients)|=|1|=||=|^Related - Operating System|64Bit (inv_operatingsystem)|Like|1||||^</ListDATA>
+					<FolderID>9</FolderID>
+					<GUID>46b02497-132b-4a58-a769-d09a052ff4d1</GUID>
+					<SearchXML></SearchXML>
+				</Table>
+			</NewDataSet>
+		</Search>
+		<GroupScript>
+			<NewDataSet>
+				<Table>
+					<GScriptID>390</GScriptID>
+					<GroupID>8093</GroupID>
+					<ScriptID>11110</ScriptID>
+					<ScriptType>0</ScriptType>
+					<RunTime>2019-06-21T08:30:00-07:00</RunTime>
+					<Repeat>0</Repeat>
+					<SearchID>0</SearchID>
+					<Parameters></Parameters>
+					<GroupScriptGuid>73172565-412c-47f5-a1d9-5cb85adecb92</GroupScriptGuid>
+					<IncludeSubGroups>1</IncludeSubGroups>
+					<EffectiveStartDate>2019-06-18T00:00:00-07:00</EffectiveStartDate>
+					<DistributionWindowType>2</DistributionWindowType>
+					<DistributionWindowAmount>3</DistributionWindowAmount>
+					<ScheduleType>4</ScheduleType>
+					<Interval>1</Interval>
+					<ScheduleWeekofMonth>0</ScheduleWeekofMonth>
+					<ScheduleDayofWeek>0</ScheduleDayofWeek>
+					<RepeatType>3</RepeatType>
+					<RepeatAmount>2</RepeatAmount>
+					<RepeatStopAfter>0</RepeatStopAfter>
+					<SkipOffline>0</SkipOffline>
+					<OfflineOnly>0</OfflineOnly>
+					<WakeOffline>1</WakeOffline>
+					<WakeScript>0</WakeScript>
+					<DisableTimeZone>0</DisableTimeZone>
+					<RunScriptOnProbe>0</RunScriptOnProbe>
+					<Priority>6</Priority>
+					<Last_User>mkanet@localhost</Last_User>
+					<Last_Date>2019-06-21T09:54:17-07:00</Last_Date>
+					<ScriptTarget>1</ScriptTarget>
+				</Table>
+			</NewDataSet>
+		</GroupScript>
+	</Group>
+</LabTech_Expansion>

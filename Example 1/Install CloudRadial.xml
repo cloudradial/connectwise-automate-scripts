@@ -1,0 +1,70 @@
+﻿<LabTech_Expansion
+	Version="190.161"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>6466</ScriptId>
+				<FolderId>214</FolderId>
+				<ScriptName>Install CloudRadial</ScriptName>
+				<ScriptNotes></ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPzQrCMBCE74LvkAdoyKZ/tmXJRUUQBdHiPTZbyCUtaQP27aVFoZ6G2ZlvYfBiG3IDHfSoFdZTT0qiWBTvwe274EbyClCsHB7fvfUzQ6oONBg9RewcHDFIIxaDLFlSxUUFO3a7oli18dF4249P8oPt3Pz2//DNT8EapUtqkzRueJEbw6Wkkr9Iaw6QQZaXbQpZ++MXAMV6zHbzAeL0EkvcAAAA</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAN2WTWvjMBCG7wv9D6Z315I/kmhxTUqahrCFlm3oqRdZmgSBIgdbXtp/v46jtHKItbRd6GZP1rwzI48exiOnD6wUG31NNc3OvnleurOr1mjM6bMu6dZ7I0Dyygv2jnta0jVoKC1tJoucSkvYbfbYBIlCZTgNukInalYLnlECyygOmT8acO5jDMTPgVIfoQQlA7KMUbLc79ImtDUHdtFmuwcNm9dTXDFtCjAro9/UqrXnPCNJGlimfUqcDTjLGSHcH4xGzI8TRn0y5MSPlyRhUT4cEgjTwATbqWE2ZlKA0oKPTUDYCYgyZPSoo8cHpBMLalHqbVb7NNqkaF6hatjqr2vju6tuxVq0Kful8cwVb0qjLZHGa5s21zeUDrahgy0OkQPuRBY1/0m5oNK7WjUVeL92/eHhC9RDFR2HeQDtv4LoZIh7OC3KGnr6blfFVK2EgqmiuYTbYrWC8kPtiE+JJEbRF33rVqvPrz8EOjwl0OHIwXmuKk2lNKP7aXvHtF//BTxDD9/J96cfi9kC1puj4Z8bBtEpkcWIONCe94E69wJWrDdUvQh+Oe5049gLmrH7UgnZxB7nfwDwvYDjkwLsGhF/6MO/iy3517BFzpve1Zc9t/knAX3FLb63zX/zbyMjdsNGCwAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>a9ef342c-86dd-11e9-beaa-0050569f405f</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>585</ID>
+					<Form>3</Form>
+					<Name>CloudRadialID</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>Daily Health Check</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill>This field is intended to store the client's CloudRadial ID for the purpose of the automatic deployment script.</Fill>
+					<LtGuid>6dcbc99d-688c-45ca-97d9-4f95c3b779e2</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>214</FolderID>
+					<ParentID>1</ParentID>
+					<Name>Installers</Name>
+					<GUID>21296a7c-9f0e-464e-a1ee-37c3a7e3f73a</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>1</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Software</Name>
+					<GUID>31866f37-8f0a-47b9-b1fd-11bd855f8391</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
