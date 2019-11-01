@@ -17,5 +17,6 @@ I’ve made some tweaks as I found the previous one didn’t work on certain ser
  
 ![Screenshot](image.png)
  
-Special thanks
+#### Special thanks
+
 Sarah Nimmo
