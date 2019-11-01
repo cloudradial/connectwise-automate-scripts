@@ -19,4 +19,4 @@ I’ve made some tweaks as I found the previous one didn’t work on certain ser
  
 #### Special thanks
 
-Sarah Nimmo
+NP Projects Ltd - Sarah Nimmo
