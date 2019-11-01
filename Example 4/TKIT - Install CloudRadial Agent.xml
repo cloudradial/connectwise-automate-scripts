@@ -1,0 +1,65 @@
+﻿<LabTech_Expansion
+	Version="190.250"
+	Name="LabTech Script Expansion"
+	Type="PackedScript">
+	<PackedScript>
+		<NewDataSet>
+			<Table>
+				<ScriptId>7194</ScriptId>
+				<FolderId>346</FolderId>
+				<ScriptName>TKIT - Install CloudRadial Agent</ScriptName>
+				<ScriptNotes>ww.turnkeyit.com.au
+20190920
+
+Enable functions for ticketing
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE SOFTWARE.</ScriptNotes>
+				<Permission>0,</Permission>
+				<EditPermission>0,</EditPermission>
+				<ComputerScript>1</ComputerScript>
+				<LocationScript>0</LocationScript>
+				<MaintenanceScript>0</MaintenanceScript>
+				<FunctionScript>0</FunctionScript>
+				<LicenseData>H4sIAAAAAAAEAFWPwQrCMBBE74L/kA9o6G5qq5YlFxUvFkTFe9ruIQfTkKZg/15aFOppmBnewNDFNux6PppoND1GzxopnZVugzt0g4scNFC6cHR6exsmhnXVudaMibizj/yqOQgsEqEAM4Gq3KgSUVwrShcI3ZtgfXxy6G3npu3/4NufB9tqYzIFzLkEBVuJyHtZZ6gkAOZ5C1jksPvxM0Dp8tF69QGYUI9f4QAAAA==</LicenseData>
+				<ScriptData>H4sIAAAAAAAEAO1bXW/aPBS+n7T/4Bu0TSoQ5wNK1UVQCG1UChWh6yohrSYxXdSQdPlou3//OjTQwIiBNIameq/ANjjJcx4fn+cc51jTXfPBbyEfyZ8/AXD80vamDdJUnn0XhaNtE1uGB8qzgUvkogn2sRvrO7WcEbJiHS+T/SA/Mh1bhsflxY6FX50GpiEjJPAcxlKR47lqEUJcK44EyBc5DkqSwcGKxB3OZpn+YXrP5fhNR9NpPn6YP0VD96MbiL5F/e3AnrZVIxyLteIPCeUTK8AnGE0Kx+WoJz7OL4EiLLXFpbYUw8dxfZkj9x9+Rn1Nx/ZNO8Bh//x7NNbzOubEnP5l9jUaUW0D2z6aPhwZjTfjEL2iQoGJp8Ek1ChAHRHLmuO/Pe1/oKB4mAzU0oO+FRiYNTCQITA8jUAt4lF0HxsAga5jF69N23CePNDTSkB5NsmT3IGXqzIhGL89jrCyPyChtDOGCflChkax5m+s3wNzDJqWExh9ZJjIAqrt+ciysMGEV2KeHJck7oxVUq78FkchFYSriSNrSkdpDoDaBl+Vn6o20L5GPbc2CZ9uQbvfuwC3njP2n5BL2tdnSl8B3caFAjrquQK+FOI0bdyRZyt8AY1uC9w2nclDQAIwtXULvoOCHjVNo/DtAB5w36I74hdNJDcD1yWzWH+XOS9sZbtKnmxXpdkuEZBlWwoJiMLVAMpH0YTRsEjFs5onPKkOttHpK43WDVC72qDR6SgtUAT/kJiJnz3MGkP+g2zftTwBs0ZiLC6qbAkEcyUxNgtzSl1lAMRSFZgeMJmGOTBXOgRCmuQ/O1dufnV6zUbn10WjeaZ2laHWaw+uG31leGHqrhNu2cMQ23aYB3ly3Pvho1jiSgInwNpQO7/yFkcPoqTHd/Kr6jBhh+FW7zDLdpCPTrF/1e9stLHAFKpmj16Rxul2Q03YToBjv0ZAYWRVAMgnPZZJBqftEujjP4HpYm++ItgsghRSiQ63wBBusUKBO4KPBJQJdI3HnBsyt41M4n6A78x8UUa2/Me1LS2KrC78+dP6S0uLhEih/oo8FKvioVAJk0h7osYu4xOYuRJkicyaAGXBN2fsXDJXXXuLTwhKK1YgM+ByJa8gJ1CQG1WgMJJGYrFSrY2LojE2ioiThKIhjRA+FCGv1xK2Nrk+8+j1BCk7tcKrEbZLCcDM9df+koSrmAnqM3jqbEiauUxjSlK6F2w5T7blIDZKg0+h00IXsK9aEC2nKhcs33vUDdMtDC+Rfo/usDeM8Y8NgCmk2hoA91czipg2T+K7bCDLXEcxXZ00xNb5sXWUHIYHAqZzlPAzTthKuFR7CJ+m0rQ/Ym6Wq2LFyFzVlahruB/YdljcZQxYrgpOkKrNt1mhoPxD6d9oakfpDkBZu7q87CuadqGdnvR+KmzOavAplMr7XcfTZCrLxDOfuT7Zc+I5Ags44x3VfvhciY8dFtn5XKmKd1Blf2N9/W1ldSHzCtS7tRbdNmRstW2QbdBss84qWnSh8ALpLJSrKhf15MO6Aw/8tgcetEDXsedtVJcS8qWn6AHCS3WBycYmZF5Q2ltokFENZvAbz2suLnCxH7h2OC3pnhD2kVj4CBS839iyXOwFls/m2LaQufpiyd+cFvpYF/PSUmmxxCek0JWblvg+zAniXB0YXOPuF/e5jP3KB5KCZPlZODzOb+5aDgq5koM7986vZzPrKyPjenrfPJ/v7VMvedkUQnZTL8v2PCO1+uOb+j2mWBeuUzRJOCcE6aHP3yA8F1MI0fdwbAVylD0tNdrbvvCRQiO+B/DoOXo8cR5j4RKbV2VypgqzStGzATNz6cgUTCr7ODYI7UPEzdrRS9f/ATWKnvCDPQAA</ScriptData>
+				<ScriptVersion>1</ScriptVersion>
+				<ScriptGuid>aa320ee5-0207-11e9-b312-00155d016508</ScriptGuid>
+				<ScriptFlags>0</ScriptFlags>
+				<Parameters></Parameters>
+			</Table>
+		</NewDataSet>
+		<ExtraDataField>
+			<NewDataSet>
+				<Table>
+					<ID>9112</ID>
+					<Form>3</Form>
+					<Name>AgentURL</Name>
+					<Sort>0</Sort>
+					<NoBreak>0</NoBreak>
+					<FType>0</FType>
+					<Section>CloudRadial</Section>
+					<UnEditable>0</UnEditable>
+					<Collapsed>0</Collapsed>
+					<Fill></Fill>
+					<LtGuid>b613b5b4-679f-4dfd-a053-d5bae8412c97</LtGuid>
+					<IsPassword>false</IsPassword>
+					<IsEncrypted>false</IsEncrypted>
+					<IsHidden>false</IsHidden>
+					<IsRestricted>false</IsRestricted>
+					<ViewPermissions></ViewPermissions>
+					<EditPermissions></EditPermissions>
+				</Table>
+			</NewDataSet>
+		</ExtraDataField>
+		<ScriptFolder>
+			<NewDataSet>
+				<Table>
+					<FolderID>346</FolderID>
+					<ParentID>0</ParentID>
+					<Name>Continuum</Name>
+					<GUID>0374292f-a1c4-4281-a4e2-ab919bbe6fbf</GUID>
+				</Table>
+			</NewDataSet>
+		</ScriptFolder>
+	</PackedScript>
+</LabTech_Expansion>
